@@ -1,0 +1,111 @@
+/* Main Page */
+
+body {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #649dfa;
+}
+
+a:hover,
+a:focus {
+    color: #1d4ed8;
+}
+
+#navbar {
+    text-align: center;
+
+}
+
+#navbuttons {
+    list-style: none;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+#navbuttons li {
+    display: inline;
+    padding: 30px;
+    font-weight: 550;
+    font-size: 1.1rem;
+    transition: background-color .15s, background-color .15s;
+}
+
+#navbuttons li a {
+    display: inline-block;
+    /* Display: inline-block is required so that margins and padding can be set */
+    position: relative;
+    /* Position needs to be relative so that... */
+    z-index: 1;
+    /* z-index can be used to make the clickable area stay on top of any text that follows. */
+    padding: 2em;
+    /* The padding increases the area that can be clicked */
+    margin: -2em;
+    /* The negative margin keeps the flow of surrounding text as it should be (beware of over lapping links) */
+}
+
+#navbuttons li:hover {
+    cursor: pointer;
+    background-color: rgb(238, 238, 238);
+}
+
+#contact {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+
+}
+
+.contact-button {
+    background-color: rgb(252, 75, 75);
+    padding: 13px;
+    border-radius: 30px;
+}
+
+#general-intro-text h1 {
+    margin-top: 0;
+    padding-top: 260px;
+    padding-left: 150px;
+    width: 50%;
+    font-size: 4.5rem;
+    margin-bottom: 0;
+}
+
+#general-intro-text p {
+    width: 50%;
+    padding-left: 150px;
+    font-size: 1rem;
+    max-width: 400px;
+}
+
+/* -------------------------------------------------------------------------------------------------------------- */
+/* Blog */
+
+.blog-container {
+    background-image: url(Blog-Banner.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 110vh;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+#blog-welcome {
+    font-family: 'Zain', sans-serif;
+    font-size: 12rem;
+    color: white;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    padding: 40px;
+    background: rgba(161, 208, 161, 0.885);
+    margin-top: 1000px;
+}
